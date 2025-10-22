@@ -1,32 +1,54 @@
-Miniport by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+# Tempest's Portfolio
 
+Welcome to my personal portfolio repository! Here you'll find a curated collection of my projects, experiments, and professional work. This repository serves as a showcase of my skills in software development, Unity, and data analytics.
 
-A super simple responsive portfolio template. It's only a single page because hey, sometimes
-you don't need a half dozen pages to make your point.
+---
 
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
+## 👋 About Me
 
-(* = Not included)
+Hi, I’m **Tempest** – a Unity Developer and aspiring Data Analyst. I specialize in building interactive applications, simulations, and data-driven solutions. I love bridging the gap between technical implementation and user experience.
 
-Feedback, bug reports, and comments are not only welcome, but strongly encouraged :)
+- 🌱 Currently exploring advanced data analytics and AI-driven solutions.
+- 💡 Passionate about creating clean, maintainable code and functional design.
+- ⚡ Interests: Game development, data visualization, system analysis, and emerging tech.
 
-AJ
-aj@lkn.io | @ajlkn
+---
 
-PS: Not sure how to get that contact form working? Give formspree.io a try (it's awesome).
+## 💼 Skills
 
+**Programming & Development:**  
+- C#, Python, SQL, JavaScript  
+- Unity3D, Git, REST APIs, JSON  
 
-Credits:
+**Data & Analysis:**  
+- Data cleaning, visualization, and modeling  
+- Excel, Pandas, Matplotlib, Power BI  
+- Basic ML & predictive analytics
 
-	Demo Images:
-		Unsplash (unsplash.com)
+**Tools & Platforms:**  
+- Visual Studio, VS Code, Jupyter Notebook  
+- GitHub, GitLab, Trello, Figma
 
-	Icons:
-		Font Awesome (fontawesome.io)
+---
 
-	Other:
-		jQuery (jquery.com)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+## 🏆 Projects
+
+Here are a few highlights from my portfolio:
+
+1. **[Project Name 1]** – Brief description of what it does and key technologies used.  
+2. **[Project Name 2]** – Brief description. Focus on interactivity or data insights.  
+3. **[Project Name 3]** – Brief description. Highlight any technical challenges solved.  
+
+*Check the `projects/` folder for all my work with full descriptions and demos.*
+
+---
+
+## 📂 Repository Structure
+
+```text
+/
+├── projects/      # Individual projects with README, source code, and assets
+├── assets/        # Media, images, and resources
+├── docs/          # Documentation, UMLs, flowcharts
+├── README.md      # This file
+└── LICENSE
