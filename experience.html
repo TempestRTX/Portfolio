@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Experience & Education | Akash SK</title>
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    /* Timeline Styling */
+    .timeline {
+      position: relative;
+      margin: 50px 0;
+      padding-left: 40px;
+      border-left: 3px solid #3b82f6;
+    }
+
+    .timeline-item {
+      margin-bottom: 40px;
+      position: relative;
+    }
+
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      left: -10px;
+      top: 5px;
+      width: 15px;
+      height: 15px;
+      background-color: #3b82f6;
+      border-radius: 50%;
+    }
+
+    .timeline-item h3 {
+      margin: 0;
+      font-size: 1.4em;
+      color: #fff;
+    }
+
+    .timeline-item h4 {
+      margin: 5px 0;
+      color: #9ca3af;
+      font-weight: normal;
+    }
+
+    .timeline-item span {
+      font-size: 0.9em;
+      color: #93c5fd;
+    }
+
+    .timeline-item p {
+      color: #cbd5e1;
+      margin-top: 10px;
+    }
+
+    /* Education Section */
+    .education {
+      margin-top: 60px;
+    }
+
+    .education h2, .experience h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #3b82f6;
+    }
+
+    .wrapper {
+      background-color: #0f172a;
+      padding: 60px 20px;
+      color: #e2e8f0;
+    }
+
+    #nav a.active {
+      color: #3b82f6;
+      font-weight: 600;
+    }
+
+    @media (max-width: 768px) {
+      .timeline { padding-left: 25px; }
+      .timeline-item::before { left: -7px; }
+    }
+  </style>
+</head>
+
+<body class="is-preload">
+  <!-- Navigation -->
+  <nav id="nav">
+    <ul class="container">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="experience.html" class="active">Experience</a></li>
+      <li><a href="data-projects.html">Data Analytics</a></li>
+      <li><a href="unity-projects.html">Unity</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Experience Section -->
+  <section class="wrapper experience">
+    <div class="container">
+      <h2><i class="fa-solid fa-briefcase"></i> Professional Experience</h2>
+
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <h3>Senior Front-End Developer (Unity)</h3>
+          <h4>TECHVED Consulting, Mumbai</h4>
+          <span>Nov 2024 – Jul 2025</span>
+          <p>Developed a cross-platform EdTech app using Unity Engine. Integrated Firebase, GA4, and BigQuery for user analytics. Designed Looker Studio dashboards to visualize engagement metrics. Mentored junior developers and collaborated across departments to align business and technical objectives.</p>
+        </div>
+
+        <div class="timeline-item">
+          <h3>Senior System Analyst</h3>
+          <h4>Raykindle LLP, Kerala</h4>
+          <span>Nov 2020 – Jul 2024</span>
+          <p>Acted as the bridge between business and technology teams to design scalable data-driven platforms. Built dashboards and analytics pipelines using Firebase, GA4, and BigQuery. Conducted A/B testing and iterative data analysis to enhance product performance and reporting accuracy.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+   <!-- Education Section -->
+  <section class="wrapper education">
+    <div class="container">
+      <h2><i class="fa-solid fa-graduation-cap"></i> Education</h2>
+
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <h3>Master’s in Data Science & Business Analytics (Executive)</h3>
+          <h4>IIT Kanpur, India</h4>
+          <span>2023 – 2025</span>
+          <p>Focused on advanced analytics, data engineering, and business problem-solving. Coursework includes machine learning, cloud data systems, and data visualization.</p>
+
+          <!-- Embedded LinkedIn Post -->
+          <div style="text-align:center; margin-top:20px;">
+            <iframe 
+              src="https://www.linkedin.com/embed/feed/update/urn:li:share:7342894165921320960?collapsed=1" 
+              height="670" 
+              width="504" 
+              frameborder="0" 
+              allowfullscreen="" 
+              title="LinkedIn Post: IIT Kanpur Graduation"
+              style="max-width:100%; border-radius:10px; border:2px solid #3b82f6;">
+            </iframe>
+            <p style="font-size: 0.9em; color: #9ca3af; margin-top: 10px;">
+              Embedded from LinkedIn — Graduation ceremony at IIT Kanpur (Executive Master's in Data Science & Business Analytics, 2025)
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <h3>Bachelor of Technology (Computer Science Engineering)</h3>
+          <h4>APJ Abdul Kalam Technological University, India</h4>
+          <span>2016 – 2020</span>
+          <p>Built a strong foundation in computer science principles, software engineering, and system design. Graduated with practical experience in C#, SQL, and full-stack development.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Footer -->
+  <section id="contact" class="wrapper style4">
+    <div class="container medium">
+      <header>
+        <h2>Get In Touch</h2>
+        <p>I'm open to freelance, full-time, and collaborative projects.</p>
+      </header>
+      <ul class="social">
+        <li><a href="mailto:akashsk2318@gmail.com" class="icon solid fa-envelope"></a></li>
+        <li><a href="https://linkedin.com/in/akash-sk-986027196" class="icon brands fa-linkedin"></a></li>
+        <li><a href="https://github.com/akashstarxs/Data-Science-and-BA" class="icon brands fa-github"></a></li>
+      </ul>
+      <footer>
+        <ul id="copyright">
+          <li>&copy; 2025 Akash SK. All rights reserved.</li>
+          <li>Template adapted from HTML5 UP</li>
+        </ul>
+      </footer>
+    </div>
+  </section>
+
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

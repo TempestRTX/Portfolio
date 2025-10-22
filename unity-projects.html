@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unity Projects | Akash SK</title>
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      background-color: #0f172a;
+      color: #e2e8f0;
+    }
+
+    .projects-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .project-card {
+      background: #1e293b;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .project-info {
+      padding: 1.2rem;
+    }
+
+    .project-info h3 {
+      margin: 0;
+      color: #3b82f6;
+    }
+
+    .project-info p {
+      margin-top: 0.5rem;
+      color: #94a3b8;
+      font-size: 0.95em;
+      line-height: 1.5;
+    }
+
+    .page-header {
+      text-align: center;
+      margin-top: 60px;
+    }
+
+    .page-header h1 {
+      color: #3b82f6;
+      font-size: 2em;
+    }
+
+    .page-header p {
+      color: #94a3b8;
+      font-size: 1em;
+      margin-top: 10px;
+    }
+
+    #nav a.active {
+      color: #3b82f6;
+      font-weight: 600;
+    }
+
+    a.project-link {
+      text-decoration: none;
+      color: inherit;
+    }
+  </style>
+</head>
+
+<body class="is-preload">
+
+  <!-- Navigation -->
+  <nav id="nav">
+    <ul class="container">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="data-projects.html">Data Analytics</a></li>
+      <li><a href="unity-projects.html" class="active">Unity</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="wrapper style1">
+    <div class="container page-header">
+      <h1><i class="fa-solid fa-cube"></i> Unity Projects</h1>
+      <p>Building interactive learning platforms and gameplay experiences using Unity.</p>
+    </div>
+  </section>
+
+  <!-- Projects Grid -->
+  <section class="wrapper style2">
+    <div class="container projects-container">
+
+      <!-- Project 1 -->
+      <a href="https://gamelyschool.com/" target="_blank" class="project-link">
+        <div class="project-card">
+          <img src="images/gamely-school.jpg" alt="Gamely School Project" />
+          <div class="project-info">
+            <h3>Gamely School</h3>
+            <p>A cross-platform EdTech app making learning playful and interactive. Built in Unity for Android, iOS, and WebGL. Integrated Firebase, GA4, and BigQuery for real-time data tracking and analytics.</p>
+            <p><strong>Role:</strong> Senior Front-End Developer (Unity) | <strong>Company:</strong> Raykindle LLP</p>
+            <p><em>Core contributor on gameplay UX, performance optimization, and Firebase integration.</em></p>
+          </div>
+        </div>
+      </a>
+
+      <!-- Project 2 -->
+      <a href="https://gamelyacademy.com/" target="_blank" class="project-link">
+        <div class="project-card">
+          <img src="images/gamely-academy.jpg" alt="Gamely Academy Project" />
+          <div class="project-info">
+            <h3>Gamely Academy</h3>
+            <p>Gamely Academy extends the Gamely ecosystem into a structured learning platform. Developed modular UI, gamified progression systems, and localization support for global users.</p>
+            <p><strong>Role:</strong> Lead Unity Developer | <strong>Company:</strong> Raykindle LLP</p>
+            <p><em>Integrated adaptive feedback systems and optimized UI asset management for scalability.</em></p>
+          </div>
+        </div>
+      </a>
+
+      <!-- Project 3 -->
+      <div class="project-card">
+        <img src="images/astraa-tcg.jpg" alt="Astraa TCG" />
+        <div class="project-info">
+          <h3>Astraa – Tactical Card Game</h3>
+          <p>An original TCG (Trading Card Game) in development. Focused on dynamic deck-building, tactical gameplay, and modular systems built in Unity using scriptable objects and custom editors.</p>
+          <p><strong>Status:</strong> In Development | <strong>Type:</strong> Personal Project</p>
+          <p><em>Currently designing combat flow, AI-driven logic, and real-time multiplayer systems.</em></p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <section id="contact" class="wrapper style4">
+    <div class="container medium">
+      <header>
+        <h2>Contact</h2>
+        <p>Let's collaborate or discuss Unity solutions.</p>
+      </header>
+      <ul class="social">
+        <li><a href="mailto:akashsk2318@gmail.com" class="icon solid fa-envelope"></a></li>
+        <li><a href="https://linkedin.com/in/akash-sk-986027196" class="icon brands fa-linkedin"></a></li>
+        <li><a href="https://github.com/akashstarxs/Data-Science-and-BA" class="icon brands fa-github"></a></li>
+      </ul>
+      <footer>
+        <ul id="copyright">
+          <li>&copy; 2025 Akash SK. All rights reserved.</li>
+        </ul>
+      </footer>
+    </div>
+  </section>
+
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
