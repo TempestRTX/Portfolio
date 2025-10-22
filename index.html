@@ -3,9 +3,43 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Akash SK </title>
+  <title>Akash SK</title>
   <link rel="stylesheet" href="assets/css/main.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    /* Profile picture circular frame */
+    .profile-frame img {
+      border-radius: 50%; /* makes it circular */
+      border: 5px solid #4CAF50; /* frame color */
+      padding: 5px; /* space between image and border */
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* subtle shadow */
+      transition: transform 0.3s ease;
+    }
+
+    /* Hover effect */
+    .profile-frame img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Emoji styling */
+    .emoji {
+      font-size: 1.2em;
+      margin-left: 0.5rem;
+    }
+
+    /* Optional: center social icons */
+    .social {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      padding: 0;
+      list-style: none;
+    }
+  </style>
 </head>
 <body class="is-preload">
 
@@ -25,13 +59,13 @@
     <div class="container">
       <div class="row">
         <div class="col-4 col-5-large col-12-medium">
-          <span class="image fit">
-            <img src="YOUR_DIRECT_IMAGE_URL.jpg" alt="Akash SK" />
+          <span class="image fit profile-frame">
+            <img src="images/Profilepic.png" alt="Akash SK" />
           </span>
         </div>
         <div class="col-8 col-7-large col-12-medium">
           <header>
-            <h1>Hey, I'm <strong>Akash SK</strong></h1>
+            <h1>Hey, I'm <strong>Akash SK</strong> <span class="emoji">🎮📊</span></h1>
           </header>
           <p><strong>Unity Developer</strong> & <strong>Data Analyst</strong><br>
           I build interactive systems and uncover insights from data.</p>

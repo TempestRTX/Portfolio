@@ -2443,3 +2443,19 @@ input, select, textarea {
 					}
 
 	}
+	/* Profile picture circular frame */
+.profile-frame img {
+  border-radius: 50%; /* makes it circular */
+  border: 5px solid #4CAF50; /* green border, adjust color */
+  padding: 5px; /* space between image and border */
+  max-width: 100%; 
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Emoji styling */
+.emoji {
+  font-size: 1.2em;
+  margin-left: 0.5rem;
+}
