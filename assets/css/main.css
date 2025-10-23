@@ -2459,3 +2459,15 @@ input, select, textarea {
   font-size: 1.2em;
   margin-left: 0.5rem;
 }
+
+.project-card {
+  display: block;
+  background: #1e293b;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
