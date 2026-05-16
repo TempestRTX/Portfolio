@@ -3,120 +3,402 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Akash SK</title>
-  <link rel="stylesheet" href="assets/css/main.css" />
+  <title>Akash SK | Technical Product Manager</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <style>
-    /* Profile picture circular frame */
-    .profile-frame img {
-      border-radius: 50%; /* makes it circular */
-      border: 5px solid #4CAF50; /* frame color */
-      padding: 5px; /* space between image and border */
-      max-width: 100%;
-      height: auto;
-      display: block;
-      margin: 0 auto;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* subtle shadow */
-      transition: transform 0.3s ease;
-    }
-
-    /* Hover effect */
-    .profile-frame img:hover {
-      transform: scale(1.05);
-    }
-
-    /* Emoji styling */
-    .emoji {
-      font-size: 1.2em;
-      margin-left: 0.5rem;
-    }
-
-    /* Optional: center social icons */
-    .social {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      padding: 0;
-      list-style: none;
-    }
-  </style>
+  <link rel="stylesheet" href="assets/css/portfolio.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>
-<body class="is-preload">
-
+<body>
   <!-- Navigation -->
-  <nav id="nav">
-    <ul class="container">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="experience.html">Experience</a></li>
-      <li><a href="data-projects.html">Data Analytics</a></li>
-      <li><a href="unity-projects.html">Unity</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">AKASH<span>SK</span></a>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#data-projects">Data Analytics</a></li>
+        <li><a href="#unity-projects">Unity</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="mobile-toggle" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section id="home" class="wrapper style1">
-    <div class="container">
-      <div class="row">
-        <div class="col-4 col-5-large col-12-medium">
-          <span class="image fit profile-frame">
-            <img src="images/Profilepic.png" alt="Akash SK" />
-          </span>
+  <!-- Hero Section with Three.js Background -->
+  <section id="home" class="hero">
+    <div id="hero-canvas"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <span class="hero-subtitle">Technical Product Manager</span>
+        <h1 class="hero-title">Hey, I'm <span class="highlight">Akash SK</span> <span class="emoji">🎮📊🚀</span></h1>
+        <p class="hero-description">Game Systems & AI/Data Enablement<br>Bridging engineering execution with data-driven product strategy.</p>
+        <div class="hero-buttons">
+          <a href="#experience" class="btn btn-primary">View My Journey</a>
+          <a href="#contact" class="btn btn-secondary">Let's Connect</a>
         </div>
-        <div class="col-8 col-7-large col-12-medium">
-          <header>
-            <h1>Hey, I'm <strong>Akash SK</strong> <span class="emoji">🎮📊🚀</span></h1>
-          </header>
-          <p><strong>Technical Product Manager</strong> | Game Systems & AI/Data Enablement<br>
-          Bridging engineering execution with data-driven product strategy.</p>
-          <a href="experience.html" class="button large">View My Journey</a>
+        <div class="hero-socials">
+          <a href="mailto:akashsk2318@gmail.com" class="social-icon" title="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/akash-sk-986027196/" target="_blank" class="social-icon" title="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/akashstarxs" target="_blank" class="social-icon" title="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://coconutgamers.fun/" target="_blank" class="social-icon" title="Live Games">
+            <i class="fas fa-gamepad"></i>
+          </a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="profile-container">
+          <img src="images/Profilepic.png" alt="Akash SK" class="profile-img" />
+          <div class="profile-glow"></div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="mouse">
+        <div class="wheel"></div>
+      </div>
+      <span>Scroll to explore</span>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section experience-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Career Path</span>
+        <h2 class="section-title">Professional Experience</h2>
+        <p class="section-desc">Building scalable systems and leading cross-functional teams</p>
+      </div>
+      
+      <div class="timeline">
+        <div class="timeline-line"></div>
+        
+        <div class="timeline-item" data-aos="fade-up">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2025 – Present</span>
+            <h3>Senior Associate Developer → Technical Product Lead</h3>
+            <h4>Abahr Tech, Bengaluru</h4>
+            <p>Architect real-time multiplayer casino game systems at scale using Unity, Coleysus backend, and Zenject DI. Define technical product requirements for multiplayer synchronization and low-latency gameplay. Drive analytics instrumentation (Firebase + BigQuery) to track player behavior, retention funnels, and monetization metrics.</p>
+            <div class="timeline-tags">
+              <span>Unity</span><span>Coleysus</span><span>Firebase</span><span>BigQuery</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-up">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Nov 2024 – Jul 2025</span>
+            <h3>Senior Front-End Developer → Analytics & BI Lead</h3>
+            <h4>TECHVED Consulting, Mumbai</h4>
+            <p>Led development of cross-platform EdTech application with integrated analytics pipeline (Firebase → BigQuery → Looker Studio). Built actionable dashboards tracking product usage and engagement KPIs. Mentored junior developers and established code review processes aligning engineering output with product goals.</p>
+            <div class="timeline-tags">
+              <span>EdTech</span><span>Analytics Pipeline</span><span>Looker Studio</span><span>Team Leadership</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-up">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Nov 2020 – Jul 2024</span>
+            <h3>Senior Unity Developer → Systems Architect</h3>
+            <h4>Raykindle LLP, Kerala</h4>
+            <p>Delivered 400+ Unity-based educational games (US curriculum) across mobile & WebGL. Architected "Gamely Academy" corporate learning platform with analytics integration. Owned end-to-end feature delivery: technical design, development, QA coordination, and deployment. Managed cross-functional team coordination to ship stable releases on tight timelines.</p>
+            <div class="timeline-tags">
+              <span>Unity3D</span><span>WebGL</span><span>400+ Games</span><span>Platform Architecture</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Education Section -->
+      <div class="education-section">
+        <div class="section-header">
+          <span class="section-tag">Education</span>
+          <h2 class="section-title">Academic Background</h2>
+        </div>
+        
+        <div class="education-grid">
+          <div class="education-card" data-aos="fade-up">
+            <div class="education-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="education-content">
+              <span class="education-date">2023 – 2025</span>
+              <h3>Master's in Data Science & Business Analytics (Executive)</h3>
+              <h4>IIT Kanpur, India</h4>
+              <p>Focused on advanced analytics, data engineering, and business problem-solving. Coursework includes machine learning, cloud data systems, and data visualization.</p>
+            </div>
+          </div>
+
+          <div class="education-card" data-aos="fade-up">
+            <div class="education-icon">
+              <i class="fas fa-university"></i>
+            </div>
+            <div class="education-content">
+              <span class="education-date">2016 – 2020</span>
+              <h3>Bachelor of Technology (Computer Science Engineering)</h3>
+              <h4>APJ Abdul Kalam Technological University, India</h4>
+              <p>Built a strong foundation in computer science principles, software engineering, and system design. Graduated with practical experience in C#, SQL, and full-stack development.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Quick Links -->
-  <section id="highlights" class="wrapper style2">
+  <!-- Data Projects Section -->
+  <section id="data-projects" class="section projects-section data-section">
     <div class="container">
-      <header>
-        <h2>Explore My Work</h2>
-      </header>
-      <div class="row aln-center">
-        <div class="col-4 col-6-medium col-12-small">
-          <section class="box style1">
-            <span class="icon solid fa-database"></span>
-            <h3><a href="data-projects.html">Data Analytics Projects</a></h3>
-            <p>Dashboards, predictive models, and data storytelling.</p>
-          </section>
-        </div>
-        <div class="col-4 col-6-medium col-12-small">
-          <section class="box style1">
-            <span class="icon solid fa-cube"></span>
-            <h3><a href="unity-projects.html">Unity Projects</a></h3>
-            <p>Interactive systems, gameplay mechanics, and UI design.</p>
-          </section>
+      <div class="section-header">
+        <span class="section-tag">Analytics & ML</span>
+        <h2 class="section-title">Data Analytics Projects</h2>
+        <p class="section-desc">Dashboards, analyses, and machine learning projects transforming raw data into insights</p>
+      </div>
+
+      <div class="projects-grid">
+        <a href="https://github.com/akashstarxs/Data-Science-and-BA/blob/main/Apple%20Stock%20Analysis/Apple_stock_price.ipynb" target="_blank" class="project-card" data-aos="fade-up">
+          <div class="project-image">
+            <img src="images/portfolio.jpg" alt="Portfolio Optimization" />
+            <div class="project-overlay">
+              <i class="fas fa-external-link-alt"></i>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Portfolio Optimization</h3>
+            <p>Applied modern portfolio theory on Apple stock data to analyze risk-return trade-offs and optimize asset allocation using Python and financial modeling techniques.</p>
+            <div class="project-tags">
+              <span>Python</span><span>Financial Modeling</span><span>Risk Analysis</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://github.com/akashstarxs/Data-Science-and-BA/blob/main/Apple%20Stock%20Analysis/Apple_stock_price.ipynb" target="_blank" class="project-card" data-aos="fade-up">
+          <div class="project-image">
+            <img src="images/pic1.jpg" alt="Apple Stock Forecasting" />
+            <div class="project-overlay">
+              <i class="fas fa-external-link-alt"></i>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Apple Stock Forecasting</h3>
+            <p>Built ARIMA and Prophet models to forecast Apple stock performance using Python and time-series data visualization in Matplotlib.</p>
+            <div class="project-tags">
+              <span>ARIMA</span><span>Prophet</span><span>Time Series</span><span>Matplotlib</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://github.com/akashstarxs/Data-Science-and-BA/blob/main/Stock%20Analysis-Semiconductor/Stock%20Analysis-Semiconductor.ipynb" target="_blank" class="project-card" data-aos="fade-up">
+          <div class="project-image">
+            <img src="images/semiconductor.jpg" alt="Semiconductor Industry Analysis" />
+            <div class="project-overlay">
+              <i class="fas fa-external-link-alt"></i>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Semiconductor Industry Analysis</h3>
+            <p>Performed comparative stock analysis of major semiconductor firms to evaluate performance trends, volatility, and market correlation using Python-based financial analytics.</p>
+            <div class="project-tags">
+              <span>Comparative Analysis</span><span>Volatility Metrics</span><span>Market Correlation</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://colab.research.google.com/drive/1WerFIb3GIldM7BREqRPfVrzcmKSygvbt?usp=sharing" target="_blank" class="project-card" data-aos="fade-up">
+          <div class="project-image">
+            <img src="images/helathcare.jpg" alt="Healthcare Market Segmentation" />
+            <div class="project-overlay">
+              <i class="fas fa-external-link-alt"></i>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Market Segmentation for Healthcare Providers</h3>
+            <p>Applied clustering techniques to segment healthcare consumers based on demographics, service usage, and affordability factors. Designed actionable insights for targeted outreach and service optimization.</p>
+            <div class="project-tags">
+              <span>Clustering</span><span>Demographics Analysis</span><span>Service Optimization</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://colab.research.google.com/drive/13_yKIKdgyThkV7W_XXJ_b3j9TrRkhVrf#scrollTo=pINBm97IxJ3_" target="_blank" class="project-card" data-aos="fade-up">
+          <div class="project-image">
+            <img src="images/Autompg.jpg" alt="Auto MPG Optimization Analytics" />
+            <div class="project-overlay">
+              <i class="fas fa-external-link-alt"></i>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Auto MPG Optimization Analytics</h3>
+            <p>Performed regression-based analysis to model and optimize vehicle fuel efficiency using Python. Explored the impact of horsepower, displacement, and weight on MPG through statistical modeling and data visualization.</p>
+            <div class="project-tags">
+              <span>Regression Analysis</span><span>Statistical Modeling</span><span>Data Visualization</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Unity Projects Section -->
+  <section id="unity-projects" class="section projects-section unity-section">
+    <div id="unity-canvas"></div>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Game Development</span>
+        <h2 class="section-title">Unity Projects</h2>
+        <p class="section-desc">Building interactive learning platforms, multiplayer casino systems, and gameplay experiences</p>
+      </div>
+
+      <div class="projects-grid featured">
+        <a href="https://gamelyschool.com/" target="_blank" class="project-card featured-card" data-aos="fade-up">
+          <div class="project-image">
+            <img src="https://gamelyschool.com/assets/images/banner/assemble_2.png" alt="Gamely School Project" />
+            <div class="project-overlay">
+              <i class="fas fa-external-link-alt"></i>
+              <span>Visit Live Site</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-meta">
+              <span class="project-role">Senior Front-End Developer</span>
+              <span class="project-company">Raykindle LLP</span>
+            </div>
+            <h3>Gamely School</h3>
+            <p>A cross-platform EdTech app making learning playful and interactive. Built in Unity for Android, iOS, and WebGL. Integrated Firebase, GA4, and BigQuery for real-time data tracking and analytics.</p>
+            <p class="project-note"><em>Core contributor on gameplay UX, performance optimization, and Firebase integration.</em></p>
+            <div class="project-tags">
+              <span>Unity</span><span>Firebase</span><span>GA4</span><span>BigQuery</span><span>WebGL</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://gamelyacademy.com/" target="_blank" class="project-card featured-card" data-aos="fade-up">
+          <div class="project-image">
+            <img src="https://gamelyacademy.com/assets/img/kids-with-game-chars-sq-625.png" alt="Gamely Academy Project" />
+            <div class="project-overlay">
+              <i class="fas fa-external-link-alt"></i>
+              <span>Visit Live Site</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-meta">
+              <span class="project-role">Lead Unity Developer</span>
+              <span class="project-company">Raykindle LLP</span>
+            </div>
+            <h3>Gamely Academy</h3>
+            <p>Gamely Academy extends the Gamely ecosystem into a structured learning platform. Developed modular UI, gamified progression systems, and localization support for global users.</p>
+            <p class="project-note"><em>Integrated adaptive feedback systems and optimized UI asset management for scalability.</em></p>
+            <div class="project-tags">
+              <span>Modular UI</span><span>Gamification</span><span>Localization</span><span>Asset Management</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://coconutgamers.fun/" target="_blank" class="project-card featured-card" data-aos="fade-up">
+          <div class="project-image">
+            <img src="images/coconutgamers.jpg" alt="CoconutGamers Casino Games" />
+            <div class="project-overlay">
+              <i class="fas fa-external-link-alt"></i>
+              <span>Visit Live Site</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-meta">
+              <span class="project-role">Senior Associate Developer</span>
+              <span class="project-company">Abahr Tech</span>
+            </div>
+            <h3>CoconutGamers – Live Casino Platform</h3>
+            <p>Real-time multiplayer casino games built with Unity and Coleysus backend. Featuring synchronized gameplay, low-latency networking, and live analytics integration for player engagement tracking.</p>
+            <p class="project-note"><em>Live production platform serving concurrent users with real-time multiplayer synchronization.</em></p>
+            <div class="project-tags">
+              <span>Multiplayer</span><span>Coleysus</span><span>Real-time</span><span>Analytics</span><span>Low-latency</span>
+            </div>
+          </div>
+        </a>
+
+        <div class="project-card in-development" data-aos="fade-up">
+          <div class="project-image">
+            <img src="images/tcg.png" alt="Astraa TCG" />
+            <div class="dev-badge">In Development</div>
+          </div>
+          <div class="project-info">
+            <div class="project-meta">
+              <span class="project-role">Personal Project</span>
+            </div>
+            <h3>Astraa – Tactical Card Game</h3>
+            <p>An original TCG (Trading Card Game) in development. Focused on dynamic deck-building, tactical gameplay, and modular systems built in Unity using scriptable objects and custom editors.</p>
+            <p class="project-note"><em>Currently designing combat flow, AI-driven logic, and real-time multiplayer systems.</em></p>
+            <div class="project-tags">
+              <span>TCG</span><span>Scriptable Objects</span><span>AI Logic</span><span>Multiplayer</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact -->
-  <section id="contact" class="wrapper style4">
-    <div class="container medium">
-      <header>
-        <h2>Let's Connect</h2>
-        <p>Reach out for collaborations or opportunities.</p>
-      </header>
-      <ul class="social">
-        <li><a href="mailto:akashsk2318@gmail.com" class="icon solid fa-envelope" title="Email"></a></li>
-        <li><a href="https://linkedin.com/in/akash-sk-986027196" class="icon brands fa-linkedin" title="LinkedIn"></a></li>
-        <li><a href="https://github.com/akashstarxs/Data-Science-and-BA" class="icon brands fa-github" title="GitHub"></a></li>
-        <li><a href="https://coconutgamers.fun/" class="icon solid fa-gamepad" title="Live Games - CoconutGamers" target="_blank"></a></li>
-      </ul>
+  <!-- Contact Section -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="contact-content">
+        <div class="contact-info">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">Let's Collaborate</h2>
+          <p class="contact-desc">I'm open to freelance, full-time, and collaborative projects. Reach out for opportunities in technical product management, game systems, or data analytics.</p>
+          
+          <div class="contact-links">
+            <a href="mailto:akashsk2318@gmail.com" class="contact-link">
+              <i class="fas fa-envelope"></i>
+              <span>akashsk2318@gmail.com</span>
+            </a>
+            <a href="https://www.linkedin.com/in/akash-sk-986027196/" target="_blank" class="contact-link">
+              <i class="fab fa-linkedin"></i>
+              <span>LinkedIn Profile</span>
+            </a>
+            <a href="https://github.com/akashstarxs" target="_blank" class="contact-link">
+              <i class="fab fa-github"></i>
+              <span>GitHub Repository</span>
+            </a>
+            <a href="https://coconutgamers.fun/" target="_blank" class="contact-link">
+              <i class="fas fa-gamepad"></i>
+              <span>Live Games - CoconutGamers</span>
+            </a>
+          </div>
+        </div>
+        
+        <div class="contact-visual">
+          <div id="contact-particles"></div>
+          <div class="contact-cta">
+            <i class="fas fa-rocket"></i>
+            <p>Ready to build something amazing?</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/main.js"></script>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p class="copyright">&copy; 2025 Akash SK. All rights reserved.</p>
+        <p class="footer-tagline">Bridging engineering with data-driven strategy</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/portfolio.js"></script>
 </body>
 </html>

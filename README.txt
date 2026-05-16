@@ -1,45 +1,46 @@
-# Tempest's Portfolio
+# Akash SK Portfolio
 
-Welcome to my personal portfolio repository! Here you'll find a curated collection of my projects, experiments, and professional work. This repository serves as a showcase of my skills in software development, Unity, and data analytics.
+A modern, interactive portfolio website built with Three.js, featuring 3D visualizations and smooth animations. Showcasing expertise in Technical Product Management, Game Systems, and Data Analytics.
+
+**Live Demo:** Open `index.html` in a browser or deploy to any static hosting.
+
+---
+
+## � Features
+
+- **3D Hero Section** - Interactive particle network with mouse-responsive animations
+- **Glassmorphism Design** - Modern frosted glass UI elements with backdrop blur
+- **GSAP Scroll Animations** - Smooth reveal animations as you scroll
+- **Three.js Integration** - 3D scenes in Hero, Unity, and Contact sections
+- **Responsive Design** - Fully responsive across desktop, tablet, and mobile
+- **Single Page Application** - Seamless navigation between sections
 
 ---
 
 ## 👋 About Me
 
-Hi, I’m **Tempest** – a Unity Developer and aspiring Data Analyst. I specialize in building interactive applications, simulations, and data-driven solutions. I love bridging the gap between technical implementation and user experience.
+Hi, I'm **Akash SK** – a Technical Product Manager specializing in Game Systems & AI/Data Enablement. I bridge engineering execution with data-driven product strategy.
 
-- 🌱 Currently exploring advanced data analytics and AI-driven solutions.
-- 💡 Passionate about creating clean, maintainable code and functional design.
-- ⚡ Interests: Game development, data visualization, system analysis, and emerging tech.
-
----
-
-## 💼 Skills
-
-**Programming & Development:**  
-- C#, Python, SQL, JavaScript  
-- Unity3D, Git, REST APIs, JSON  
-
-**Data & Analysis:**  
-- Data cleaning, visualization, and modeling  
-- Excel, Pandas, Matplotlib, Power BI  
-- Basic ML & predictive analytics
-
-**Tools & Platforms:**  
-- Visual Studio, VS Code, Jupyter Notebook  
-- GitHub, GitLab, Trello, Figma
+- 🎮 Building real-time multiplayer casino systems at Abahr Tech
+- 📊 Master's in Data Science & Business Analytics from IIT Kanpur
+- 🚀 400+ Unity educational games delivered at Raykindle LLP
+- ⚡ Passionate about creating scalable, data-driven solutions
 
 ---
 
-## 🏆 Projects
+## 💼 Technical Stack
 
-Here are a few highlights from my portfolio:
+**Frontend & 3D:**
+- Three.js (WebGL 3D graphics)
+- GSAP + ScrollTrigger (animations)
+- Custom CSS with glassmorphism
+- Font Awesome icons
 
-1. **[Project Name 1]** – Brief description of what it does and key technologies used.  
-2. **[Project Name 2]** – Brief description. Focus on interactivity or data insights.  
-3. **[Project Name 3]** – Brief description. Highlight any technical challenges solved.  
-
-*Check the `projects/` folder for all my work with full descriptions and demos.*
+**Product & Engineering:**
+- Unity3D, C#, Python, SQL
+- Firebase, BigQuery, Analytics pipelines
+- Multiplayer systems (Coleysus backend)
+- REST APIs, Git, CI/CD
 
 ---
 
@@ -47,8 +48,25 @@ Here are a few highlights from my portfolio:
 
 ```text
 /
-├── projects/      # Individual projects with README, source code, and assets
-├── assets/        # Media, images, and resources
-├── docs/          # Documentation, UMLs, flowcharts
-├── README.md      # This file
-└── LICENSE
+├── index.html              # Main portfolio page (SPA)
+├── assets/
+│   ├── css/
+│   │   └── portfolio.css   # Modern styling with glassmorphism
+│   ├── js/
+│   │   └── portfolio.js    # Three.js scenes + GSAP animations
+│   └── ...                 # Other assets from original template
+├── images/                 # Profile and project images
+├── backup/                 # Original HTML files (archived)
+└── README.txt              # This file
+```
+
+---
+
+## 🎯 Sections
+
+1. **Hero** - 3D particle network with profile and call-to-action
+2. **Experience** - Interactive timeline with professional history
+3. **Education** - IIT Kanpur Master's + B.Tech credentials
+4. **Data Analytics Projects** - 5 ML/Analytics projects with live links
+5. **Unity Projects** - 4 game dev projects (3 live platforms)
+6. **Contact** - Direct links to email, LinkedIn, GitHub, and live games
