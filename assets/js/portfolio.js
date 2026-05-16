@@ -507,17 +507,6 @@ class ScrollAnimations {
       }
     );
     
-    // Parallax effect for hero
-    gsap.to('.hero-text', {
-      scrollTrigger: {
-        trigger: '.hero',
-        start: 'top top',
-        end: 'bottom top',
-        scrub: 1
-      },
-      y: 100,
-      opacity: 0.5
-    });
   }
 }
 
