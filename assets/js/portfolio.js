@@ -490,6 +490,25 @@ class ScrollAnimations {
       );
     });
     
+    // Casino overview
+    const casinoOverview = document.querySelector('.casino-overview');
+    if (casinoOverview) {
+      gsap.fromTo(casinoOverview,
+        { opacity: 0, y: 30 },
+        {
+          scrollTrigger: {
+            trigger: casinoOverview,
+            start: 'top 85%',
+            toggleActions: 'play none none reverse'
+          },
+          opacity: 1,
+          y: 0,
+          duration: 0.7,
+          ease: 'power2.out'
+        }
+      );
+    }
+
     // Contact links stagger
     gsap.fromTo('.contact-link',
       { opacity: 0, x: -30 },
